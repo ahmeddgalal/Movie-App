@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, bootstrap, javascript, jquery">
+    <meta name="author" content="Ahmed Galal">
+    
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Page Style Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>MOVIE</title>
+    <!-- Page icon Link -->
+    <link rel="icon" href="img/p_blackwidow_21043_v2_6d1b73b8.jpeg">
+</head>
+
+<body>
+
+    <!-- slide bar -->
+    
+    <div id="optionBox" class="h-100 d-flex">
+        <div class="links-box h-100  flexz align-items-start text-white p-3">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <div id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-block">
+                            <li class="nav-item">
+                                <p class="nav-link active" aria-current="page" id="movie/now_playing"
+                                    aria-label="watch now playing movies">Now playing</p>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" id="movie/popular" aria-label="watch Popular movies">Popular</p>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" id="movie/top_rated" aria-label="watch Top Rated movies">Top
+                                    Rated</p>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" id="trending/movie/week" aria-label="watch Trending movies">
+                                    Trending</p>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" id="movie/upcoming"id="trending/movie/week" aria-label="watch Upcoming movies">Upcoming
+                                </p>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" id="contactLink" aria-label="go to contact us">Contact Us</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="slider-footer ">
+                <ul class="white">
+                    <li><a href="https://www.facebook.com/ahmed.mogalal/" target="_blank"
+                        aria-label="go to follow me in facebook"><i class="fab fa-facebook-f"></i></a></li>
+
+                    <li><a href="https://github.com/ahmeddgalal" target="_blank"
+                        aria-label="go to follow me in github"><i class="fab fa-github"></i></a></li>
+
+                    <li><a href="https://www.linkedin.com/in/ahmed-galal-4139a323b/" target="_blank"
+                        aria-label="go to follow me in linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <p class="text-muted">Copyright &copy; 2022 <br> Ahmed Galal</p>
+            </div>
+        </div>
+        <div class="icons-box py-3 px-1 flexz bg-white h-100">
+            <img src="img/logo.png" alt="logo-icon">
+            <span><i id="toggleBtn" class="fas fa-bars fa-2x"></i></span>
+            <ul>
+                <li class="mb-3"><a href="#"><i class="fas fa-globe"></i></a></li>
+                <li><i class="fas fa-share-alt"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="loading-screen">
+        <i class="fa fa-spinner fa-5x fa-spin text-white"></i>
+    </div>
+      <!--end of slide bar -->
+
+
+    <!--search input start -->
+    <div class="col-md-6 m-auto py-10">
+        <div class="item">
+            <input type="text" placeholder="search" class="form-control search-control bg-transparent" id="search">
+        </div>
+    </div>
+    <!--search input end -->
+
+
+
+
+    <!--div of api -->
+
+
+<div class="container">
+    <div class="row">
+    </div>
+</div>
+
+
+    <!-- input group start -->
+    <div class="container contact my-5">
+        <h2 class="text-light py-5" >ContacUs...</h2>
+
+        <div class="row">
+
+            <div class="col-md-6 my-3">
+                <div class="contact-form">
+                    <input class="form-control bg-transparent"  type="text" id="name-input" placeholder="Enter Your Name" name="searchWord">
+                    <div class="alert alert-danger d-none" id="name-alert" role="alert">
+                        Your Name is not valid
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6 my-3">
+                <div class="contact-form">
+                    <input class="form-control bg-transparent" type="text" id="email-input" placeholder="Enter Email" name="searchWord">
+                    <div class="alert alert-danger d-none" id="email-alert" role="alert">
+                        Please enter valid email
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6 my-3">
+                <div class="contact-form">
+                    <input class="form-control bg-transparent" type="text" id="phone-input" placeholder="Enter Phone" name="searchWord">
+                    <div class="alert alert-danger d-none" id="phone-alert" role="alert">
+                        Please enter valid phone!
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6 my-3">
+                <div class="contact-form">
+                    <input class="form-control bg-transparent" type="text" id="age-input" placeholder="Enter Age" name="searchWord">
+                    <div class="alert alert-danger d-none" id="age-alert" role="alert">
+                        Please enter valid age!
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6 my-3">
+                <div class="contact-form">
+                    <input class="form-control bg-transparent" type="text" id="password-input" placeholder="Enter Password" name="searchWord">
+                    <div class="alert alert-danger d-none" id="password-alert" role="alert">
+                        entre valid password *Minimum eight characters, at least one letter and one number:*!
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6 my-3">
+                <div class="contact-form">
+                    <input class="form-control bg-transparent" type="password" id="rePassword-input" placeholder="Enter RePassword" name="searchWord">
+                    <div class="alert alert-danger d-none" id="rePassword-alert" role="alert">
+                        password does not match
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+
+        </div>
+    
+        <button class="btn btn-danger " id="submitBtn">Submit</button>
+    </div>
+    <!-- input group end -->
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
